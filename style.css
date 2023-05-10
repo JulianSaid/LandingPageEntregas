@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #E0C9CA;
+    background-color: #b3d6f7b0;
 }
 
 /* NAVBAR */
@@ -71,7 +71,6 @@ a:hover {
 }
 
 .container-hero {
-    margin-top: 70px;
     display: flex;
     gap: 10px;
     width: 100%;
@@ -101,7 +100,8 @@ a:hover {
 .container-hero img {
     display: flex;
     width: 50%;
-    padding: 10px 20px;
+    height: 600px;
+    padding: 80px 20px;
 }
 
 .botones {
