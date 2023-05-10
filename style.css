@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto";
+}
+
+body {
+    background-color: #E0C9CA;
+}
+
+/* NAVBAR */
+header {
+    background: #01396D;
+    height: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo-instagram {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 85px;
+    margin-left: 20px;
+}
+
+
+.navegador-inicio ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.items-navegador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+a {
+    color: #E0C9CA;
+    font-weight: 600;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* HERO */
+
+#hero {
+    display: flex;
+}
+
+.container-hero {
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    color: #01396D;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.container-info h1 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.container-info p {
+    font-size: 20px;
+    font-size: 400;
+}
+
+.container-hero img {
+    display: flex;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.botones span {
+    display: flex;
+    background: #01396D;
+    color: #E0C9CA;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* DESCRIPCION */
+#descripcion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 400px;
+    color: #01396D;
+    gap: 20px;
+}
+
+#descripcion h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#descripcion p {
+    font-size: 20px;
+    font-size: 400;
+}
