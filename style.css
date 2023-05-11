@@ -8,6 +8,7 @@
     --bg-white: #fff;
     --bg-electric: #f0fbff;
     --nav-bg: #0f1525;
+    --var-roja: rgb(245, 43, 43);
 
     /* Text colors */
     --bg-gray: #adb9c7;
@@ -78,7 +79,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: var(--var-roja);
     cursor: pointer;
 }
 
@@ -146,7 +147,7 @@ nav {
 
 .botones span {
     display: flex;
-    background: red;
+    background: var(--var-roja);
     color: white;
     padding: 5px 10px;
     border-radius: 1rem;
@@ -166,16 +167,20 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10px 20px;
+    padding: 112px 20px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background: var(--nav-bg);
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
-.descripcion-info {
+/* .descripcion-info {
     display: flex;
     flex-direction: column;
     background: var(--nav-bg);
-    width: 92%;
+    width: 100%;
     height: 150px;
     padding: 20px 30px;
     justify-content: center;
@@ -183,7 +188,7 @@ nav {
     color: var(--text-white);
     border-radius: 1rem;
     text-align: start;
-}
+} */
 
 #descripcion h2 {
     font-size: 35px;
@@ -202,7 +207,6 @@ nav {
 #beneficios {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
     gap: 40px;
     justify-content: center;
     align-items: center;
@@ -221,21 +225,21 @@ nav {
     display: flex;
     flex-direction: column;
     background: var(--nav-bg);
-    width: 90%;
-    padding: 20px 30px;
+    width: 100%;
+    padding: 112px 0px;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-    border-radius: 1rem;
     gap: 30px;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
+    margin-top: 70px;
 }
 
 
-.beneficio1, 
+.beneficio1,
 .beneficio2,
 .beneficio3 {
-    background: red;
+    background: var(--var-roja);
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
@@ -285,4 +289,87 @@ nav {
     gap: 100px;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#contacto {
+    display: flex;
+    width: 100%;
+    background: var(--nav-bg);
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-contact {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 112px 30px;
+    width: 45%;
+    height: 500px;
+    background: var(--var-roja);
+    border-radius: 1rem;
+}
+
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.textarea {
+    width: 350px;
+    height: 100px;
+}
+
+.form-contact h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px 5px red;
+}
+
+.form-contact form label {
+font-size: 20px;
+font-weight: 400;
+font-style: italic;
+}
+
+.boton-formulario {
+    display: flex;
+    background: var(--nav-bg);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.boton-formulario:hover {
+    box-shadow: 10px 10px 10px black;
+}
+
+.mapa-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    padding: 112px 30px;
+    background: var(--var-roja);
+    border-radius: 1rem;
+}
+
+.mapa-contacto iframe {
+    width: 100%;
 }
