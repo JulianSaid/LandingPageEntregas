@@ -1,6 +1,6 @@
 :root {
     /* bg colors */
-    --background: #02050e;
+    --background-header: #002333;
     --primary: #1e50ff;
     --bg-header: #272d3785;
     --btn-bg: #050d26;
@@ -9,6 +9,8 @@
     --bg-electric: #f0fbff;
     --nav-bg: #0f1525;
     --var-roja: rgb(245, 43, 43);
+    --text-black: #000000;
+    --bg-containers: #b0c5bb;
 
     /* Text colors */
     --bg-gray: #adb9c7;
@@ -21,23 +23,30 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    font-family: "Roboto";
+    font-family: "Popins";
 }
 
 body {
-    background: var(--bg-gray);
+    background: #B4BEC9;
     color: var(--text-white);
 }
 
 /* NAVBAR */
 header {
-    background: var(--btn-bg);
-    /* background: linear-gradient(307deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    background: var(--background-header);
+    /* background: rgb(119,0,41);
+background: linear-gradient(54deg, rgba(119,0,41,1) 0%, rgba(253,127,101,0.8575805322128851) 50%, rgba(179,0,31,1) 100%); */
+    /* background: var(--bc-header);
+    background: linear-gradient(54deg, rgba(119, 0, 41, 1) 0%, rgba(253, 127, 101, 1) 0%, rgba(179, 0, 31, 1) 100%); */
     height: 85px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+
+header {
+    background: linear-gradient(to bottom, #002333, #B4BEC9);
 }
 
 .logo-instagram {
@@ -75,11 +84,12 @@ header {
 a {
     color: var(--text-white);
     font-weight: 600;
-    text-shadow: 1px 1px 5px red;
+    font-size: 20px;
+    /* text-shadow: 1px 1px 5px red; */
 }
 
 a:hover {
-    color: var(--var-roja);
+    color: var(--text-black);
     cursor: pointer;
 }
 
@@ -112,21 +122,30 @@ nav {
     gap: 10px;
     width: 45%;
     height: 80%;
-    background: var(--nav-bg);
+    background: var(--background-header);
     padding: 50px 20px;
     color: var(--text-white);
 }
 
 .container-info h1 {
     font-weight: 900;
-    font-size: 45px;
-    font-style: italic;
-    text-shadow: 2px 2px 5px red;
+    font-size: 70px;
+    /* text-shadow: 2px 2px 5px red; */
+}
+
+/* GRADIENTE H1 */
+h1 {
+    background: rgb(183, 47, 51);
+    background: linear-gradient(54deg, rgba(183, 47, 51, 1) 0%, rgba(253, 127, 101, 0.8575805322128851) 50%, rgba(179, 0, 31, 1) 100%);
+    ;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .container-info p {
-    font-size: 20px;
-    font-size: 400;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .container-hero img {
@@ -135,7 +154,7 @@ nav {
     height: 80%;
     padding: 50px 20px;
     border-radius: 1rem;
-    background-color: var(--nav-bg);
+    background-color: var(--background-header);
 }
 
 .botones {
@@ -147,9 +166,10 @@ nav {
 
 .botones span {
     display: flex;
-    background: var(--var-roja);
+    background: rgb(183, 47, 51);
+    background: linear-gradient(54deg, rgba(183, 47, 51, 1) 0%, rgba(253, 127, 101, 0.8575805322128851) 50%, rgba(179, 0, 31, 1) 100%);
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 1rem;
     text-align: center;
     font-size: 18px;
@@ -171,7 +191,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: var(--nav-bg);
+    background: var(--background-header);
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -191,10 +211,9 @@ nav {
 } */
 
 #descripcion h2 {
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 600;
-    font-style: italic;
-    text-shadow: 1px 1px 5px red;
+    /* text-shadow: 1px 1px 5px red; */
 }
 
 #descripcion p {
@@ -215,16 +234,15 @@ nav {
 
 .info-beneficios {
     color: var(--text-white);
-    font-style: italic;
-    text-shadow: 2px 2px 5px red;
-    font-size: 25px;
+    /* text-shadow: 2px 2px 5px red; */
+    font-size: 35px;
     font-weight: 400;
 }
 
 .container-beneficios {
     display: flex;
     flex-direction: column;
-    background: var(--nav-bg);
+    background: var(--background-header);
     width: 100%;
     padding: 112px 0px;
     justify-content: center;
@@ -239,7 +257,7 @@ nav {
 .beneficio1,
 .beneficio2,
 .beneficio3 {
-    background: var(--var-roja);
+    background: var(--bg-containers);
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
@@ -282,6 +300,7 @@ nav {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
+    color: black;
 }
 
 .los-beneficios {
@@ -294,7 +313,7 @@ nav {
 #contacto {
     display: flex;
     width: 100%;
-    background: var(--nav-bg);
+    background: var(--background-header);
     margin-top: 30px;
     justify-content: space-around;
     align-items: center;
@@ -311,8 +330,9 @@ nav {
     padding: 112px 30px;
     width: 45%;
     height: 500px;
-    background: var(--var-roja);
+    background: var(--bg-containers);
     border-radius: 1rem;
+    color: black;
 }
 
 .form-contact form {
@@ -331,16 +351,16 @@ nav {
 }
 
 .form-contact h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     font-style: italic;
-    text-shadow: 2px 2px 5px red;
+    /* text-shadow: 2px 2px 5px red; */
 }
 
 .form-contact form label {
-font-size: 20px;
-font-weight: 400;
-font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .boton-formulario {
@@ -366,10 +386,31 @@ font-style: italic;
     width: 50%;
     height: 500px;
     padding: 112px 30px;
-    background: var(--var-roja);
+    background: var(--bg-containers);
     border-radius: 1rem;
 }
 
 .mapa-contacto iframe {
     width: 100%;
+}
+
+/* FOOTER */
+
+footer ul {
+    display: flex;
+    margin-top: 70px;
+    background: var(--background-header);
+    margin-bottom: 70px;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+footer ul li {
+    font-size: 20px;
+    font-weight: 100;
+
 }
