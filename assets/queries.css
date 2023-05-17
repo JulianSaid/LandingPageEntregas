@@ -14,7 +14,7 @@
         display: none;
         overflow-y: scroll;
         z-index: none;
-        border-radius: 1rem;
+        border-radius: 1rem 0 0 1rem ;
     }
 
     nav label {
