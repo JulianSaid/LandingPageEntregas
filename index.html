@@ -20,12 +20,12 @@
         <img src="./assets/nuevo.png" alt="Logo JDS" class="logo">
 
         <nav class="navegador-inicio">
-                <label for="menu-toggle">
-                    <img src="./assets/menu.png" alt="imagen menu hamburguesa">
-                </label>
+            <label for="menu-toggle">
+                <img src="./assets/menu.png" alt="imagen menu hamburguesa">
+            </label>
 
-                <input type="checkbox" id="menu-toggle">
-            
+            <input type="checkbox" id="menu-toggle">
+
 
             <ul class="navbar-list">
                 <li class="items-navegador"><a href="#">Home</a></li>
@@ -40,8 +40,10 @@
 
         <div class="container-hero">
             <div class="container-info">
-                <h1> SIMON </h1>
-                <p>Diseñamos y creamos tu pagina web.</p>
+                <div class="title-info">
+                    <h1> SIMON </h1>
+                    <p>Diseñamos y creamos tu pagina web.</p>
+                </div>
                 <div class="botones">
                     <span>Contacto</span>
                     <span>Clientes</span>
@@ -114,15 +116,18 @@
 
             <label for="nombreyapellido">Nombre y Apellido:</label>
             <!-- <br> -->
-            <input type="text" style="width: 350px; height: 40px;" id="nombreyapellido">
+            <input type="text" style="width: 180%; height: 40px;" id="nombreyapellido" placeholder="INGRESE SU NOMBRE"
+                class="input-nombre">
             <!-- <br> -->
             <label for="email">Email:</label>
             <!-- <br> -->
-            <input type="email" id="email" style="width: 350px; height: 40px;">
+            <input type="email" id="email" style="width: 180%; height: 40px;" placeholder="INGRESE SU EMAIL"
+                class="input-email">
             <!-- <br> -->
             <label for="mensaje">Mensaje:</label>
             <!-- <br> -->
-            <textarea name="" id="mensaje" cols="60" rows="10" class="textarea"></textarea>
+            <textarea name="" id="mensaje" cols="60" rows="10" style="width: 180%;" class="textarea"
+                placeholder="INGRESE SU MENSAJE"></textarea>
 
             <button type="submit" class="boton-formulario">ENVIAR FORMULARIO</button>
         </form>

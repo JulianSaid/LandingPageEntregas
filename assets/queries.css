@@ -1,26 +1,114 @@
-/* @media (max-width: 992px) {
+/* TABLET */
+@media (max-width: 992px) {
     .navegador-inicio ul {
         background: var(--background-header);
-        width: 100%;
+        width: 50%;
         position: absolute;
         top: 85px;
         right: 0;
         height: calc(100vh - 65px);
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         border: solid 2px var(--bg-containers);
         display: none;
         overflow-y: scroll;
         z-index: none;
+        border-radius: 1rem;
     }
 
-nav label {
-    display: block;
+    nav label {
+        display: block;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+
+    .container-info {
+        max-width: 300px;
+    }
+
+    #contacto {
+        width: 100%;
+    }
+
+    .form-contact {
+        width: 40%;
+    }
+
+    .mapa-contacto {
+        width: 40%;
+    }
 }
 
-#menu-toggle: checked + .navbar-list {
+/* CELULAR */
+@media (max-width: 576px) {
+.navbar-list li {
     display: flex;
+    text-align: center;
 } 
 
-} */
+    .container-hero img {
+        display: none;
+    }
+
+    .container-info {
+        width: 45%;
+    }
+
+    .container-info h1 {
+        font-size: 60px;
+    }
+
+    .container-info p {
+        font-size: 18px;
+    }
+
+    .botones {
+        display: flex;
+        gap: 20px;
+    }
+
+    .container-descripcion h2 {
+        font-size: 40px;
+    }
+
+    .container-descripcion p {}
+
+    .container-beneficios h2 {
+        font-size: 40px;
+    }
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 5px;
+        height: 90%;
+    }
+
+    .form-contact {
+        width: 75%;
+    }
+
+    .form-contact h2 {
+        font-size: 30px;
+    }
+
+    .form-contact label {
+        font-size: 18px;
+    }
+
+    .mapa-contacto {
+        width: 90%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
